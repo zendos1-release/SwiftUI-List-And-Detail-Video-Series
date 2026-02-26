@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>List & Detail SwiftUI Video Series</title>
+
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f8f8;
+      color: #222;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
+    /* --- Header with Icon + Title --- */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      margin-bottom: 1rem;
+    }
+
+    .header img {
+      width: 70px;
+      height: 70px;
+      border-radius: 16px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    h2 {
+      margin-top: 2rem;
+      font-size: 1.3rem;
+    }
+
+    ul {
+      margin-top: 1rem;
+      padding-left: 20px;
+      line-height: 1.6;
+    }
+
+    p {
+      line-height: 1.6;
+    }
+
+    a {
+      color: #007aff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- Screenshots Section --- */
+    .screenshots {
+      margin-top: 2.5rem;
+    }
+
+    .screenshot-row img {
+      height: 350px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+      flex-shrink: 0;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+
+    .screenshot-row img:hover {
+      transform: scale(1.03);
+    }
+
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #666;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- APP ICON + TITLE -->
+    <div class="header">
+      <img src="images/logo.png" alt="BookPal App Icon">
+      <h1>List & Detail Video Series</h1>
+    </div>
+
+    <p>A video series exploring the creation of a simple SwiftUI List & Detail application.</p>
+
+    <p>
+      The aim of this video series is to explore the creation of a simple SwiftUI application. The application should contain common reusable components which are representative of an everyday iOS application.
+    </p>
+
+    <h2>What We Will Explore</h2>
+
+    <ul>
+      <li>Implementing a SwiftUI List</li>
+      <li>Making an API request to retrieve data</li>
+      <li>Designing an extendable application architecture</li>
+      <li>Navigation patterns in a SwiftUI app</li>
+      <li>Extraction of constants and styling</li>
+      <li>Clean view layout and code construction</li>
+    </ul>
+
+    <p>
+    </p>
+
+    <!-- API SECTION -->
+    <h2>Api Guide</h2>
+    <p>The api we will explore and use in this app can be found here: </p>
+    <p>
+      <a href="https://jsonplaceholder.typicode.com/guide/">jsonplaceholder.typicode.com/guide</a>
+    </p>
+
+    <h2>Source Code</h2>
+    <p>
+      You can view the full Xcode project on GitHub:
+    </p>
+
+    <p>
+      <a href="https://github.com/Zendos1/ListAndDetail-App" target="_blank">
+        View Project on GitHub →
+      </a>
+    </p>
+
+
+    <!-- SCREENSHOTS SECTION -->
+    <div class="screenshots">
+      <h2>Screenshots</h2>
+
+      <div class="screenshot-row">
+        <a href="images/screenshot1.png" target="_blank">
+          <img src="images/screenshot1.png" alt="Screenshot 1">
+      </a>
+
+        <a href="images/screenshot2.png" target="_blank">
+          <img src="images/screenshot2.png" alt="Screenshot 2">
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      © <span id="year"></span> Mark Jones. All rights reserved.
+    </footer>
+
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
