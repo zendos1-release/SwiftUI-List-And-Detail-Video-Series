@@ -85,6 +85,44 @@
       transform: scale(1.03);
     }
 
+    /* --- Video Series Section --- */
+    .video-series {
+      margin-top: 2.5rem;
+    }
+
+    .video-list {
+      list-style: none;
+      padding: 0;
+      margin-top: 1rem;
+    }
+
+    .video-item {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 14px;
+      padding: 8px 10px;
+      border-radius: 10px;
+      transition: background 0.2s ease;
+    }
+
+    .video-item:hover {
+      background: rgba(0,0,0,0.04);
+    }
+
+    .video-item img {
+      width: 120px;
+      height: 68px;
+      object-fit: cover;
+      border-radius: 8px;
+      flex-shrink: 0;
+    }
+
+    .video-item span {
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
     footer {
       margin-top: 3rem;
       font-size: 0.9rem;
@@ -114,7 +152,11 @@
       .screenshot-row img {
         box-shadow: 0 4px 16px rgba(0,0,0,0.7);
       }
-  }
+
+      .video-item:hover {
+        background: rgba(255,255,255,0.06);
+      }
+    }
   </style>
 </head>
 
@@ -165,6 +207,38 @@
       </a>
     </p>
 
+
+    <!-- VIDEO SERIES SECTION -->
+    <div class="video-series">
+      <h2>App Build Video Series:</h2>
+
+      <ul class="video-list">
+
+        <li>
+          <a class="video-item" href="https://www.youtube.com/watch?v=jkzVyAc04J0" target="_blank">
+            <img src="https://img.youtube.com/vi/jkzVyAc04J0/hqdefault.jpg" alt="Video 2 Thumbnail">
+            <span>Episode 2 – SwiftUI Previews, layer separation and injecting mocks.</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="video-item" href="https://www.youtube.com/watch?v=tb_qgfSfMSg" target="_blank">
+            <img src="https://img.youtube.com/vi/tb_qgfSfMSg/hqdefault.jpg" alt="Video 3 Thumbnail">
+            <span>Episode 3 – Exploring the API.</span>
+          </a>
+        </li>
+
+        <li>
+          <a class="video-item" href="https://www.youtube.com/watch?v=-qHy4cyNvts" target="_blank">
+            <img src="https://img.youtube.com/vi/-qHy4cyNvts/hqdefault.jpg" alt="Video 4 Thumbnail">
+            <span>Episode 4 – Adding the first API request and displaying real content.</span>
+          </a>
+        </li>
+
+        <!-- Repeat for remaining 6 videos -->
+
+      </ul>
+    </div>
 
     <!-- SCREENSHOTS SECTION -->
     <div class="screenshots">
